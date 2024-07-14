@@ -1,0 +1,8 @@
+.footer{
+    position: absolute;
+    background-color: skyblue;
+    width: 99%;
+    color: white;
+    padding: 3px;
+    bottom: 0;
+}
