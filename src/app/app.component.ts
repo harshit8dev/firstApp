@@ -15,7 +15,6 @@ member:any;
 childValue= 'x';
 display = false;
 constructor(private memberdate:MemberdataService){
-  console.warn("memberdata", memberdate.user())
   this.member = memberdate.user();
 }
 list :any[] = [];

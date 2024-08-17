@@ -9,7 +9,6 @@ import { MemberdataService } from '../services/memberdata.service';
 export class FooterComponent {
   memberEmail:any;
   constructor(private memberdate:MemberdataService){
-    console.warn("memberdata", memberdate.user())
     this.memberEmail = memberdate.user();
   }
 }

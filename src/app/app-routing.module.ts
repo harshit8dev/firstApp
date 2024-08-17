@@ -8,31 +8,35 @@ import { AboutCompanyComponent } from './about-company/about-company.component';
 
 const routes: Routes = [
   {
-    path:'header',
-    component: HeaderComponent
-  },
-  // for child routing 
-  {
-    path:'home',
-    component:HomeComponent,
-    children:[
-      {path:'company', component:AboutCompanyComponent}
-    ]
-  },
-  {
-    path:'user',
-    component:UserComponent
-  },
-  // for passing data in dynamic routing 
-  {
-    path:'user/:id',
-    component:UserComponent
-  },
-  // for 404 page not found 
-  {
-    path:'**',
-    component: NoPageComponent
+    path:'admin', loadChildren:()=>import('./admin/admin.module')
+    .then(mod=>mod.AdminModule)
   }
+  // {
+  //   path:'header',
+  //   component: HeaderComponent
+  // },
+  // // for child routing 
+  // {
+  //   path:'home',
+  //   component:HomeComponent,
+  //   children:[
+  //     {path:'company', component:AboutCompanyComponent}
+  //   ]
+  // },
+  // {
+  //   path:'user',
+  //   component:UserComponent
+  // },
+  // // for passing data in dynamic routing 
+  // {
+  //   path:'user/:id',
+  //   component:UserComponent
+  // },
+  // // for 404 page not found 
+  // {
+  //   path:'**',
+  //   component: NoPageComponent
+  // }
 ];
 
 @NgModule({

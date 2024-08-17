@@ -67,11 +67,38 @@
 <router-outlet></router-outlet> -->
 
 <!-- service in angular  -->
-<ul>
+<!-- <ul>
     <li *ngFor="let data of member">
         {{data.name}} : {{data.age}}
 
     </li>
 </ul>
 
-<app-footer></app-footer>
+<app-footer></app-footer> -->
+<!-- 
+Routing module in angular
+<ul>
+    <li>
+        <a routerLink="login">Login</a>
+        
+    </li>
+    <Li>
+        <a routerLink="list">List</a>
+    </Li>
+</ul>
+
+<router-outlet></router-outlet> -->
+
+Lazy loading
+<ul>
+    <li>
+        <a routerLink="admin/login">Login</a>
+        
+    </li>
+    <Li>
+        <a routerLink="admin/list">List</a>
+    </Li>
+</ul>
+
+<router-outlet></router-outlet>
+

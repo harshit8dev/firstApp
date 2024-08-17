@@ -14,6 +14,7 @@ import { AboutCompanyComponent } from './about-company/about-company.component';
 import { FooterComponent } from './footer/footer.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
